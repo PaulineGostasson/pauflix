@@ -1,0 +1,62 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #100e19; // Change the background color as needed
+    padding: 2rem;
+    box-sizing: border-box; // Include padding in element size
+  }
+  
+  h3 {
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.5rem; // Increase or decrease font size as needed
+    margin-top: 2rem; // Add some space at the top of each heading
+  }
+  
+  .header-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .poster {
+    width: 70%;
+    opacity: 0.5;
+    border-radius: 0 50px 0 50px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Add a subtle shadow
+    cursor: pointer;
+  }
+
+  .genres{
+    width: 100%;
+
+    &__title{
+        margin-left: 2rem;
+        color:white;
+    }
+}
+
+
+
+  
+  @media (max-width: 450px) {
+    .poster {
+        display: none;
+      }
+    
+  }
+  @media (max-width: 400px) {
+  
+    h3 {
+      text-align: center; // Center-align headings on small screens
+      margin-top: 1rem;
+    }
+
+    .genres__title{
+        font-size: 20px;
+    }
+  }
+  

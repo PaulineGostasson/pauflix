@@ -1,0 +1,29 @@
+body { 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'arial';
+
+}
+
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-track {
+  background: #100e19;
+}
+.app{
+  background-color:#100e19;
+
+}
