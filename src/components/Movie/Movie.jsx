@@ -28,7 +28,7 @@ function Movie({ title, year, thumbnail, genre, actors, synopsis }) {
       synopsis,
     };
     localStorage.setItem("selectedMovie", JSON.stringify(movieData));
-    navigate("/pauflix/movie-info");
+    navigate("/movie-pau/movie-info");
   };
   useEffect(() => {
     const existingMovie = favoriteMovies.find((movie) => movie.title === title);

@@ -7,15 +7,15 @@ import "./App.css";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/pauflix/",
+      path: "/movie-pau/",
       element: <Landing />,
     },
     {
-      path: "/pauflix/movie-info",
+      path: "/movie-pau/movie-info",
       element: <MovieInfo />,
     },
     {
-      path: "/pauflix/favorites",
+      path: "/movie-pau/favorites",
       element: <Favorites />,
     },
     {
