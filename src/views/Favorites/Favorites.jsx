@@ -26,7 +26,7 @@ function Favorites() {
       synopsis: movie.synopsis,
     };
     localStorage.setItem("selectedMovie", JSON.stringify(movieData));
-    navigate("/movie-pau/movie-info");
+    navigate("/pauflix/movie-info");
   }
 
   return (

@@ -18,7 +18,7 @@ function Navbar(allMovies) {
       <div className="navbar__logo">
         <h1
           onClick={() => {
-            navigate("/movie-pau");
+            navigate("/pauflix");
           }}
         >
           PauFlix{" "}
@@ -33,7 +33,7 @@ function Navbar(allMovies) {
         <li
           className="navbar__li"
           onClick={() => {
-            navigate("/movie-pau");
+            navigate("/pauflix");
             setIsOpen(false);
           }}
         >
@@ -42,7 +42,7 @@ function Navbar(allMovies) {
         <li
           className="navbar__li"
           onClick={() => {
-            navigate("/movie-pau/favorites");
+            navigate("/pauflix/favorites");
             setIsOpen(false);
           }}
         >
