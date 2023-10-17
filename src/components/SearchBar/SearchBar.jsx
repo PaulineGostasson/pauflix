@@ -31,11 +31,11 @@ function SearchBar() {
     console.log(movieData)
     if (movieData.thumbnail === '') {
       localStorage.setItem("selectedMovie", JSON.stringify(movie));
-      navigate("/movie-pau/movie-info");
+      navigate("/pauflix/movie-info");
       return movieData;
     } else {
       localStorage.setItem("selectedMovie", JSON.stringify(movie));
-      navigate("/movie-pau/movie-info");
+      navigate("/pauflix/movie-info");
       window.location.reload();
       return movieData;
     }

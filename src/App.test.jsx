@@ -22,19 +22,19 @@ describe("Movie App Tests", () => {
 
     await userEvent.click(movie);
 
-    expect(window.location.pathname).toBe("/movie-pau/movie-info");
+    expect(window.location.pathname).toBe("/pauflix/movie-info");
   });
 
   it("should add a movie to favorites and view it in Favorites", async () => {
-    const entries = "/movie-pau/";
+    const entries = "/pauflix/";
     const user = userEvent.setup();
 
     render(
       <FavoriteMoviesProvider>
         <MemoryRouter initialEntries={[entries]}>
           <Routes>
-            <Route path="/movie-pau/" element={<Landing />} />
-            <Route path="/movie-pau/favorites" element={<Favorites />} />
+            <Route path="/pauflix/" element={<Landing />} />
+            <Route path="/pauflix/favorites" element={<Favorites />} />
           </Routes>
         </MemoryRouter>
       </FavoriteMoviesProvider>
@@ -52,15 +52,15 @@ describe("Movie App Tests", () => {
   });
 
   it("should add and then remove a movie from favorites", async () => {
-    const entries = "/movie-pau/";
+    const entries = "/pauflix/";
     const user = userEvent.setup();
 
     render(
       <FavoriteMoviesProvider>
         <MemoryRouter initialEntries={[entries]}>
           <Routes>
-            <Route path="/movie-pau/" element={<Landing />} />
-            <Route path="/movie-pau/favorites" element={<Favorites />} />
+            <Route path="/pauflix/" element={<Landing />} />
+            <Route path="/pauflix/favorites" element={<Favorites />} />
           </Routes>
         </MemoryRouter>
       </FavoriteMoviesProvider>
@@ -92,15 +92,15 @@ describe("Movie App Tests", () => {
   });
 
   it("should display images on all movies", async () => {
-    const entries = "/movie-pau/";
+    const entries = "/pauflix/";
     const user = userEvent.setup();
 
     render(
       <FavoriteMoviesProvider>
         <MemoryRouter initialEntries={[entries]}>
           <Routes>
-            <Route path="/movie-pau/" element={<Landing />} />
-            <Route path="/movie-pau/categories" element={<Genres />} />
+            <Route path="/pauflix/" element={<Landing />} />
+            <Route path="/pauflix/categories" element={<Genres />} />
           </Routes>
         </MemoryRouter>
       </FavoriteMoviesProvider>
@@ -114,15 +114,15 @@ describe("Movie App Tests", () => {
   });
 
   it("should mark a movie as a favorite from Movie Info", async () => {
-    const entries = "/movie-pau/";
+    const entries = "/pauflix/";
     const user = userEvent.setup();
     render(
       <FavoriteMoviesProvider>
         <MemoryRouter initialEntries={[entries]}>
           <Routes>
-            <Route path="/movie-pau/" element={<Landing />} />
-            <Route path="/movie-pau/movie-info" element={<MovieInfo />} />
-            <Route path="/movie-pau/favorites" element={<Favorites />} />
+            <Route path="/pauflix/" element={<Landing />} />
+            <Route path="/pauflix/movie-info" element={<MovieInfo />} />
+            <Route path="/pauflix/favorites" element={<Favorites />} />
           </Routes>
         </MemoryRouter>
       </FavoriteMoviesProvider>
@@ -143,16 +143,16 @@ describe("Movie App Tests", () => {
   });
 
   it("should display all information about a movie in Movie Info", async () => {
-    const entries = "/movie-pau/";
+    const entries = "/pauflix/";
     const user = userEvent.setup();
 
     render(
       <FavoriteMoviesProvider>
         <MemoryRouter initialEntries={[entries]}>
           <Routes>
-            <Route path="/movie-pau/" element={<Landing />} />
-            <Route path="/movie-pau/movie-info" element={<MovieInfo />} />
-            <Route path="/movie-pau/categories" element={<Genres />} />
+            <Route path="/pauflix/" element={<Landing />} />
+            <Route path="/pauflix/movie-info" element={<MovieInfo />} />
+            <Route path="/pauflix/categories" element={<Genres />} />
           </Routes>
         </MemoryRouter>
       </FavoriteMoviesProvider>
@@ -178,7 +178,7 @@ describe("Movie App Tests", () => {
   });
 
   it("should add a movie to favorites and check if it's added to localStorage", async () => {
-    const entries = "/movie-pau/";
+    const entries = "/pauflix/";
 
     localStorage.clear();
 
@@ -187,8 +187,8 @@ describe("Movie App Tests", () => {
       <FavoriteMoviesProvider>
         <MemoryRouter initialEntries={[entries]}>
           <Routes>
-            <Route path="/movie-pau/" element={<Landing />} />
-            <Route path="/movie-pau/favorite" element={<Favorites />} />
+            <Route path="/pauflix/" element={<Landing />} />
+            <Route path="/pauflix/favorite" element={<Favorites />} />
           </Routes>
         </MemoryRouter>
       </FavoriteMoviesProvider>
@@ -212,7 +212,7 @@ describe("Movie App Tests", () => {
 
   it("should delete a movie from localStorage when clicking a favorite twice", async () => {
     const user = userEvent.setup();
-    const entries = "/movie-pau/";
+    const entries = "/pauflix/";
 
     localStorage.clear();
 
@@ -220,8 +220,8 @@ describe("Movie App Tests", () => {
       <FavoriteMoviesProvider>
         <MemoryRouter initialEntries={[entries]}>
           <Routes>
-            <Route path="/movie-pau/" element={<Landing />} />
-            <Route path="/movie-pau/favorites" element={<Favorites />} />
+            <Route path="/pauflix/" element={<Landing />} />
+            <Route path="/pauflix/favorites" element={<Favorites />} />
           </Routes>
         </MemoryRouter>
       </FavoriteMoviesProvider>

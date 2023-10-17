@@ -9,5 +9,5 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./src/tests/setup.js",
   },
-  base: "/movie-pau/",
+  base: "/pauflix/",
 });
