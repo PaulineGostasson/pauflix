@@ -1,10 +1,10 @@
-import "./DisplayCarousel.scss";
+import "./Carousel.scss";
 import { useRef, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Movie from "../Movie/Movie";
 
-function DisplayCarousel({ genreMovies }) {
+function Carousel({ genreMovies }) {
   const gridRef = useRef(null);
   const [movieCount, setMovieCount] = useState(0);
   const [scrollLeftVisible, setScrollLeftVisible] = useState(true);
@@ -82,4 +82,4 @@ function DisplayCarousel({ genreMovies }) {
   );
 }
 
-export default DisplayCarousel;
+export default Carousel;
